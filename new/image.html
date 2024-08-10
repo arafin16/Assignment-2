@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100%;
+            height:100%;
+        }
+        .row{
+            height: 400px;
+            display: flex;
+            gap: 2px;
+            margin-bottom: 2px;
+            
+        }
+        .vg{
+            height:calc((100% - 2px)/2);
+        }
+        .row > div{
+            flex: 1;
+        }
+        .square{
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+            gap: 2px;
+        }
+        @media screen and (max-width:576px) {
+            .row{
+                flex-direction: column;
+                height: auto;
+            }
+            .square{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <div class="row">
+            <img src="images/photo-1681556731500-1b3c1449c373.avif" alt="">
+        </div>
+        <div class="row">
+           <div>
+            <img src="images/photo-1542353436-312f0e1f67ff.avif" alt="">
+           </div>
+            <div>
+                <img src="images/photo-1582918818640-5cb81a7e2943.avif" alt="">
+            </div>
+          <div class="vg">
+            <img src="images/exercise4.png" alt="">
+              <img src="images/exercise4.png" alt="">
+          </div>
+        </div>
+       <div class="row">
+        <div>
+            <img src="images/premium_photo-1667382050215-6df445b0d3fa.avif" alt="">
+        </div>
+        <div class="square">
+            <img src="images/premium_photo-1667382052170-a2a6e46ef560.avif" alt="">
+            <img src="images/exercise4.png" alt="">
+            <img src="images/exercise5.jpg" alt="">
+            <img src="images/exercise5.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/image 5.png" alt="">
+        </div>
+       </div>
+    </main>
+</body>
+</html>

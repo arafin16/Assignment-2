@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            /* border: 2px solid tomato; */
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a{
+            text-decoration: none;
+            /* border: 2px dotted blue; */
+            padding-right: 10px;
+             
+            
+            
+        }
+        .login-form-parents{
+            display: flex;
+            justify-content: end;
+            border: 2px solid red;
+            height: 90vh;
+            align-items: center;
+        }
+       .login-form{
+        display: flex;
+        justify-content: center;
+        border: 2px solid red;
+        flex-direction: column;
+        width: 50%;
+       }
+       .login-form input{
+        margin-top: 10px;
+       }
+    </style>
+<body>
+    
+    <nav>
+       <div class="gap-chap">
+        <a href="">Home</a>
+        <a href="">Profile</a>
+        <a href="">Blog</a>
+        <a href="">Content</a>
+       </div>
+        <a href="">Login</a>
+    </nav>
+    <h3>Calculate your BMI</h3>
+    <p>we believe fitness should be accessible to everyone,everywhere ,regardless of income or access to a gym</p>
+   <section class="login-form-parents">
+    <form class="login-form">
+        <input type="email" placeholder="Your Email" required>
+        <input type="password" name="" id="" placeholder="Password">
+        <input type="submit" value="login">
+    </form>
+   </section>
+</body>
+
+</html>

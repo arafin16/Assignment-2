@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border-radius: 20px;
+        }
+        .header{
+            height: 20px;
+            border: 2px dotted red;
+            margin: 5px 0px 10px 0px;
+            background-color: bisque;
+        }
+        .main{
+            border: 2px dotted red;
+            height: 350px;
+            display: flex;
+
+        }
+        .nav{
+            height: 300px;
+            width: 200px;
+            border: 2px solid red;
+            margin: 20px;
+            background-color: bisque;
+        }
+        .content{
+            height: 300px;
+            width: 700px;
+            border: 2px solid red;
+            margin: 20px 10px 20px 5px;
+            background-color: bisque;
+        }
+        .sidebar{
+            height: 130px;
+            width: 90px;
+            border: 2px solid red;
+            margin: 20px;
+            background-color: bisque;
+        }
+        .advertising{
+            height: 135px;
+            width: 90px;
+            border: 2px solid red;
+            margin: 30px 20px ;
+            background-color: bisque;
+        }
+        .footer{
+            height: 20px;
+            border: 2px dotted red;
+            background-color: bisque;
+            margin-top: 5px;
+            padding-top: 5px;
+        }
+        @media screen and (max-width:576px){
+            .main{
+                flex-direction: column;
+                height: auto;
+            }
+            .ber{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            
+        </div >
+        <div class="main">
+            <div class="nav">
+
+
+            </div>
+            <div class="content">
+
+            </div>
+           <div class="ber">
+            <div class="sidebar">
+
+            </div>
+            <div class="advertising">
+
+            </div>
+           </div>
+            
+        </div>
+        <div class="footer">
+
+        </div>
+
+    </header>
+
+</body>
+</html>

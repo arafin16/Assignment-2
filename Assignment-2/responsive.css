@@ -1,0 +1,13 @@
+@media screen and (max-width:576px){
+  
+    .hamburger-menu{
+        display: block;
+    }
+    .content{
+        display: none;
+    }
+   }
+   .health{
+        
+        flex-direction: column;
+   }

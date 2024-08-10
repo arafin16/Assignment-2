@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+        }
+        .title{
+            border-radius: 10px;
+            background-color: antiquewhite;
+            border: 2px dotted red;
+        }
+      @media screen and (max-width:576px){
+        .container{
+            grid-template-columns: repeat(1,1fr);
+        }
+        
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h3>First Box</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique nobis nisi nostrum, pariatur delectus non rerum officiis perferendis maiores dolorum.</p>
+
+        </div>
+        <div class="title">
+            <h3>Second Box</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum deleniti hic, perferendis aliquid quibusdam officia. Id voluptatibus similique dicta voluptas.</p>
+
+        </div>
+        <div class="title">
+            <h3>third box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quis! Modi, vero nulla? Vero sapiente vitae a neque, autem commodi?</p>
+        </div>
+        <div class="title">
+            <h3>forth box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolorum voluptatum maxime! Temporibus animi pariatur sit molestiae minima architecto excepturi!</p>
+        </div>
+    </div>
+</body>
+</html>

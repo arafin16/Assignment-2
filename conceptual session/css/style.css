@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar css start */
+.navbar-wrapper{
+    background-color: rgb(71,85,105);
+    position: sticky;
+    top:0px;
+}
+.navbar-main{
+   color: white;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.navbar-menu-btn{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    border: none;
+    margin-left: 10px;
+}
+.hamburger-menu{
+  display: none;
+}
+/* navbar css end */
+/* banner section */
+.main-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    
+}
+.banner-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(242,242,242);
+
+}
+.banner-child{
+    width: 47%;
+    position: relative;
+    
+    
+}
+.banner-child img {
+    width: 100%;
+   border-radius: 10px;
+}
+.btn{
+    border: 2px solid grey;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.off{
+    background-color: rgba(0, 0, 0, 0.443);
+    color: white;
+    width: max-content;
+    padding: 20px 60px;
+    font-size: 25px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+/* banner section */
+/* popular section start */
+.popular-main{
+margin-top: 40px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+
+}
+.card{
+    min-height: 200px;
+   
+    padding: 10px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.342);
+    border-radius: 10px;
+}
+.card>div:nth-child(1){
+    border: 2px solid red;
+}
+.card img{
+    border: 1px solid red;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+/* popular section end */
+/* footer start */
+.advut-main{
+   /* border:  2px solid red; */
+   min-height: 300px;
+   margin-top: 40px;
+   display: grid;
+   grid-template-columns: repeat(12,1fr);
+   /* grid-template-rows: repeat(12,1fr); */
+   gap: 20px;
+}
+.advut-child-1{
+  background-color: antiquewhite;
+  grid-column: 1/span 7;
+  border-radius: 70px;
+  position: relative;
+}
+.advut-child-2{
+    background-color: aqua;
+    grid-column: 8/span 5;
+    border-radius: 70px;
+    position: relative;
+}
+.advut-child-3{
+    background-color: brown;
+    grid-column: 1/span 5;
+    border-radius: 70px;
+    position: relative;
+}
+.advut-child-4{
+    background-color: bisque;
+    grid-column: 6/span 7;
+    border-radius: 70px;
+    position: relative;
+}
+.advut-main img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(30%);
+    border-radius: 70px;
+    height: 150px;
+}
+.icon{
+    top: 40%;
+    left: 50%;
+    font-size: 50px;
+    position: absolute;
+    color: azure;
+}
+/* footer end */
+/* qna section */
+.qna-main{
+border: 2px solid green;
+height: 300px; 
+margin-top: 40px;
+display: flex;
+justify-content: space-between;
+
+
+}
+.qna-child{
+     border: 2px solid blue; 
+     width: 45%;
+
+}
+.qna-child img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    
+
+}
+.form-main{
+ border: 1px solid rgb(85, 129, 20);
+ width: 48%;
+ margin-top: 20px;
+
+
+}
+.form-field-text-area{
+    width: 100%;
+    margin-top: 20px;
+}
+.qna-btn{
+    background-color: blanchedalmond;
+    color:black;
+    padding: 20px 70px;
+    border-radius: 20px;
+    border: none;
+    display: block;
+    margin-left: auto;
+}

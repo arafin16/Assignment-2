@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header, .nav, .main, .sidebar, .advertise, .footer{
+            background-color: bisque;
+            border: 2px solid tomato;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .header{
+            grid-column: header;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .main{
+            grid-area: main;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .advertise{
+            grid-area: advertise;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+           grid-template-areas:
+           "header header header header"
+           "nav main main sidebar"
+           "nav main main advertise"
+           "footer footer footer footer"
+           ;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                grid-template-areas: 
+                "header header header"
+                "nav main main"
+                "nav main main"
+                "footer sidebar advertise";
+            }
+        }
+    </style>
+</head>
+<body class="container">
+    <header class="header">
+        <h3>The header</h3>
+    </header>
+    
+        <nav class="nav">
+            <ul>
+                <li><a href="">nav 1</a></li>
+                <li><a href="">nav 2</a></li>
+                <li><a href="">nav 3</a></li>
+            </ul>
+        </nav>
+        <main class="main">
+            <article>
+                <h3>Main Article 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, repudiandae.</p>
+            </article>
+            <article>
+                <h3>main article 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci illo a temporibus maxime aspernatur excepturi dolorem, nobis soluta dolorum est dignissimos quos animi eveniet, nisi accusantium rerum minima! Iure, eveniet!</p>
+            </article>
+        </main>
+        
+        
+    
+    
+        <div class="sidebar">
+            <h4>sidebar</h4>
+        </div>
+        <div class="advertise">
+            <h4>advertise</h4>
+        </div>
+    
+    <div class="footer">
+        <h3>the footer</h3>
+    </div>
+</body>
+</html>
